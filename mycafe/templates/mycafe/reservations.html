@@ -1,0 +1,76 @@
+{% extends 'mycafe/base.html' %}
+
+{% block content %}
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Book a Table</title>
+		
+	<style type="text/css">
+		#p1{
+			height:450px;
+			width:100%; 
+			
+			margin-top: 170px;
+		}
+		#s1{
+			float: left;
+			height: 500px;
+			width: 30%;
+			margin-left: 40px;
+		}
+		#s2{
+			float: left;
+			height: 500px;
+			width: 30%;
+		}
+		#s3{
+			float: left;
+			height: 500px;
+			width: 30%;
+			margin-left: 100px;
+		}
+		input{
+       	  transition: 0.3s;
+        	  width: 400px;
+        	  height:20px;
+        	  border-right: 5px;
+        	  border-left: 5px;
+        	  border-top: 5px;
+			  font-weight: bolder;
+			  border-color: black;
+			  padding: 8px;	
+			  margin: 10px;
+			  color: black;
+        }
+        li a {margin-left:80px;}
+		body{
+			padding: 50px 0px 0px 0px;
+			z-index: 0;
+		}
+	</style>
+</head>
+<body>
+	
+	<div id="p1">
+		<div id="s1"><img src="{% static 'images/gallery-4.jpg' %}" height="400px" width="350px"></div>
+		<div id="s2">
+			<center>Reservation<br><h2>BOOK YOUR TABLE</h2></center><br>
+			<center><form  method="POST">
+				{% csrf_token%}
+				<div class="form-group">
+				<input required type="text" class="form-control" name="Name" placeholder="Your Name">	
+				<input required type="email" class="form-control"  name="E_Mail" placeholder="email">	
+				<input required type="date" class="form-control"  name="Date">
+				<input required type="time" class="form-control"  name="Time">
+				<input required type="number" class="form-control"  name="no_of_people" placeholder="no. of people">
+				<input required type="submit" class="form-control" placeholder="Find A Table">
+			</div>
+			</form></center>
+		</div>
+		<div id="s3"><img src="{% static 'images/gallery-2.jpg' %}" height="400px" width="350px"></div>
+	</div>
+</body>
+</html>
+{% endblock content %}

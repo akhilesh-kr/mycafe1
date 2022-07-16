@@ -1,0 +1,23 @@
+{% load static %}
+<style>
+    li a {margin-left:80px;}
+</style>
+<nav class="navbar navbar-expand-sm bg-light fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="home">
+            <img src="{% static 'images/mycafe_logo.jpg' %}" alt="" width="150px" height="80px" class="d-inline-block align-text-top">
+        </a>
+    <div class="collapse navbar-collapse" id="Navbar">
+    <ul class="navbar nav mr-auto">
+        <li class="nav-item" style="display: inline-block;"><a href="reservations" class="nav-link">Reservation</a> </li>
+        <li class="nav-item"style="display: inline-block; "><a href="menu" class="nav-link">Menu</a> </li>
+        <li class="nav-item" style="display: inline-block; "><a href="aboutus" class="nav-link">About</a> </li>
+        <li class="nav-item" style="display: inline-block;"><a href="contact" class="nav-link">Contact</a> </li>
+        <li class="nav-item" style="display: inline-block;"><a href="order" class="nav-link">Order Online</a> </li>
+    </ul>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    </div>
+</nav>

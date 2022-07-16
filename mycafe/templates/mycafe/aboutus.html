@@ -1,0 +1,63 @@
+
+{% extends 'mycafe/base.html' %}
+
+{% block content %}
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About Us</title>
+	<style>
+	
+		
+	#p1{
+		height: 550px;
+		width:1100px;
+		margin-top: 150px;
+	}
+	#s1{
+		height: 550px;
+		width:280px;
+		float: left;
+	}
+	#s2{
+		height: 550px;
+		width:500px;
+		float: left;
+		border-style: solid;
+		border-width: 5px;
+		text-align: center;
+		box-shadow: 10px 10px 10px;
+
+	}
+	#s3{
+		height: 550px;
+		width:280px;
+		float: left;
+	}
+
+</style>
+</head>
+<body>
+	<div class="container">
+
+	<div id="p1">
+		<div id="s1">
+			<img src="{% static 'images/gallery-1.jpg' %}" class="img-fluid rounded-circle float-left" height="250px" width="250px">
+			<img src="{% static 'images/gallery-4.jpg' %}" class="img-fluid rounded-circle float-left" height="250px" width="250px" style="margin-top: 50px;">
+		</div>
+		<div id="s2"><br><br>
+			<center><h1><span style="font-family: 'Brush Script MT' , cursive";>Our story</span></h1><br><h3><b>LOVE FOR FOOD</b></h3><br></center>
+			<h5 style="font-family: 'Courier New' ,monospace; ">Welcome, This is MyCafe . MyCafe has been created by a team that is extremely passionate about food , wine and all things fine . As a collective group of chefs and hoteliers who have worked in some of the best hostels and restaurants around the world , we were always lookout for new dining experiences and exciting cuisines . It is this love and passion for eating and exploring that boughtus together to create <b>MyCafe</b></h5>
+		</div>
+		<div id="s3">
+			<img src="{% static 'images/gallery-3.jpg' %}" class="img-fluid rounded-circle float-right" height="250px" width="250px">
+			<img src="{% static 'images/gallery-2.jpg' %}" class="img-fluid rounded-circle float-right" height="250px" width="250px" style="margin-top: 50px;">
+		</div>
+	</div>
+	
+
+</div>
+</body>
+</html>
+{% endblock content %}

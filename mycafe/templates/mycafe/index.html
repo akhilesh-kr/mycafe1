@@ -1,0 +1,208 @@
+{% extends 'mycafe/base.html' %}
+
+{% block content %}
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="device-width",initial-scale='1'>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<title>MyCafe</title>
+	<style type="text/css">
+		
+		#p1{height: 420px; margin-top: 100px;}
+		#p2{height: 420px;}
+		#p3{height: 420px;}
+		#s1{
+			float: left;
+			height:400px;
+			width:50%;
+			margin-left: 30px;
+		}
+		#s2{
+			float: right;
+			height:400px;
+			width:45%;
+			margin-right: 30px;
+		}
+		#s3{
+			float: right;
+			height:400px;
+			width:45%;
+			margin-right: 30px;
+		}
+		#s4{
+			float: left;
+			height:400px;
+			width:50%;
+			margin-left: 30px;
+			}
+		#s5{
+			float: left;
+			height:400px;
+			width:50%;			
+			margin-left: 30px;
+		}
+		#s6{
+			float: right;
+			height:400px;
+			width:45%;
+			margin-right: 30px;
+		}
+		#p4
+			{
+				height:400px;
+				width:100%;
+				margin-top:50px;
+				background-image: url("{% static 'images/bg-1.jpg' %}")
+			}
+		#s7{
+			float: left;
+			height:400px;
+			width:25%;
+			text-align: center;
+			
+		}
+		#s8{
+			float: left;
+			height:400px;
+			width:25%;
+			text-align: center;
+		
+		}
+		#s9{
+			float: left;
+			height:400px;
+			width:25%;
+			text-align: center;
+			
+		}
+		#s10{
+			float: left;
+			height:400px;
+			width:25%;
+			text-align: center;
+			
+		}
+		#p5{
+			height: 450px;
+			width: 100%;
+		
+		}
+		#s11{
+			float:left;
+			height: 400px;
+			width: 33%;
+			text-align: center;
+			
+		}
+		#s15{
+			float:left;
+			height: 400px;
+			width: 33%;
+			text-align: center;
+			
+		}
+		#s16{
+			float:left;
+			height: 400px;
+			width: 33%;
+			text-align: center;
+			
+		}
+		
+
+	</style>
+</head>
+<body>
+	
+	<div id="p1">
+		<div id="s1">
+			<img src="{% static 'images/special-1.jpg' %}" alt="imag" height="100%" width="100%">
+		</div>
+		<div id="s2">
+			<br><br>
+			<center>Catering<br><b>SPECIAL EVEENTS</b><br><b>. Weddings . Anniversaries . Baby Showers</b></center><br>Celebrate your special event in beautiful atmosphere of MY CAFE .Equisite & creative cousine . friendly atmosphere and highly professional staff will make your special day beautiful and enjoyable . You can select from couple of premade menus for every ocassion that should please many different palates or work with us to create your own menus.<br>
+			<center><u>MORE DETAILS</u></center>
+		</div>
+	</div>
+	<div id="p2">
+		<div id="s3">
+			<img src="{% static 'images/special-6.jpg' %}" alt="imag" height="100%" width="100%">
+		</div>
+		<div id="s4">
+			<br><br>
+			<center>Catering<br><b>SPECIAL EVEENTS</b><br><b>. Weddings . Anniversaries . Baby Showers</b></center><br>Celebrate your special event in beautiful atmosphere of MY CAFE .Equisite & creative cousine . friendly atmosphere and highly professional staff will make your special day beautiful and enjoyable . You can select from couple of premade menus for every ocassion that should please many different palates or work with us to create your own menus.<br>
+			<center><u>MORE DETAILS</u></center>
+		</div>
+	</div>
+	<div id="p3">
+		<div id="s5">
+			<img src="{% static 'images/special-7.jpg' %}" alt="imag" height="100%" width="100%">
+		</div>
+		<div id="s6">
+			<br><br>
+			<center>Catering<br><b>SPECIAL EVEENTS</b><br><b>. Weddings . Anniversaries . Baby Showers</b></center><br>Celebrate your special event in beautiful atmosphere of MY CAFE .Equisite & creative cousine . friendly atmosphere and highly professional staff will make your special day beautiful and enjoyable . You can select from couple of premade menus for every ocassion that should please many different palates or work with us to create your own menus.<br>
+			<center><u>MORE DETAILS</u></center>
+		</div>
+	</div><br><br>
+	<div id="p4">
+		<h2 style="text-align: center;">Our most loved dishes</h2><br>
+		<div id="s7">
+			<b>Beef Medallion</b><br>
+			<img src="{% static 'images/dish-1.png' %}" height="200px" width="200px"><br>
+			<b>Sumptuous delicious food baked in our restaurants with curated ingredients</b><br>
+			$9.50
+			
+		</div>
+		<div id="s8">
+			<b>Penne Arabiata</b><br>
+			<img src="{% static 'images/dish-2.png' %}" height="200px" width="200px"><br>
+			<b>Sumptuous delicious food baked in our restaurants with curated ingredients</b><br>
+			$5.50
+		</div>
+		<div id="s9">
+			<b>Sweet & Spicy Chicken</b><br>
+			<img src="{% static 'images/dish-3.png' %}" height="200px" width="200px"><br>
+			<b>Sumptuous delicious food baked in our restaurants with curated ingredients</b><br>
+			$10.50
+		</div>
+		<div id="s10">
+			<b>Thai Chicken Curry</b><br>
+			<img src="{% static 'images/dish-4.png' %}" height="200px" width="200px"><br>
+			<b>Sumptuous delicious food baked in our restaurants with curated ingredients</b><br>
+			$8.50
+		</div>
+	</div>	
+	<div id="p5">
+		<div id="s11">
+			<img src="{% static 'images/special-2.jpg' %}" height="220px" width="350px"><br>
+			french salad<br>
+			<b>Sumptuous delicious food baked in our restaurants with curated ingredients</b>
+		</div>
+		<div id="s15">
+			<img src="{% static 'images/special-3.jpg' %}" height="220px" width="350px"><br>
+			french salad<br>
+			<b>Sumptuous delicious food baked in our restaurants with curated ingredients</b>
+		</div>
+		<div id="s16">
+			<img src="{% static 'images/special-4.jpg' %}" height="220px" width="350px"><br>
+			french salad<br>
+			<b>Sumptuous delicious food baked in our restaurants with curated ingredients</b>
+		</div>
+	</div>
+	
+</body>
+</html>
+{% endblock content %}

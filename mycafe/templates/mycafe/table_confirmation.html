@@ -1,0 +1,21 @@
+{% extends 'mycafe/base.html' %}
+
+{% block content %}
+<style>
+    #msg{
+        margin-top:10rem ;
+        height: 230px;
+    }
+</style>
+<div class="container mb-5">
+    <div class="row justify-content-center mt-1">
+        <div class="col-md-5 col-sm-12 p-4 text-center">
+            <div id="msg">
+            <h1>Thank You!!</h1>
+            <p>Table booked for {{name}} and {{no_of_people}} others for date {{date}} at {{time}}.<br>You'll recieve a confirmation mail soon.</p>
+            <a href=home>Go to the homepage</a> 
+        </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
